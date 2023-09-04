@@ -1,8 +1,7 @@
 const bibooSprites = [
-	"./../assets/images/biboo1.gif",
-	"./../assets/images/biboo2.gif"
+	"./assets/images/biboo1.gif",
+	"./assets/images/biboo2.gif"
 ]
-
 
 const createAnimation = (animationDuration, sprite) => {
 	const animation = document.createElement("img")
