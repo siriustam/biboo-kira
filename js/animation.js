@@ -25,6 +25,16 @@ export const showAnimation = () => {
 	const animationDuration = maxDuration / speed * 10
 	const animationArea = document.getElementById("kira-animation")
 	const animation = createAnimation(animationDuration, sprite)
+	
+	var randPos = Math.floor(Math.random()*screen.height);	
+	var randSize = Math.floor(Math.random()*199)+1;	
+	animation.style.top = randPos - 470 + "px"
+	animation.style.scale = randSize + "%"
+	if(document.getElementById('rotate').checked){
+		animation.style.transform = 'rotate('+localStorage.getItem("count")+'deg)'
+	}else{
+
+	}
 
 	animationArea.appendChild(animation)
 
